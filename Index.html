@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Rotina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calendário de Rotina</h1>
+
+  <div id="calendar"></div>
+
+  <h2>Minhas Tarefas</h2>
+  <ul id="taskList"></ul>
+
+  <!-- Modal de tarefa -->
+  <div id="taskModal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle">Adicionar Tarefa</h3>
+      <input type="text" id="taskInput" placeholder="Digite a tarefa...">
+      <button onclick="saveTask()">Salvar</button>
+      <button onclick="closeModal()">Cancelar</button>
+      <button id="deleteButton" onclick="deleteTask()" style="display: none;">Excluir</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
